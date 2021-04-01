@@ -1,0 +1,38 @@
+<div class="d-flex flex-row bd-highlight mb-3">
+
+<div class="form-froup row" style="width: 60%;">
+    <label class="col-sm-2 col-form-label">Id</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="EmployersId"
+        placeholder="Enter Employers Id">
+    </div>
+    <label class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="EmployersName"
+        placeholder="Enter Employers Name">
+    </div>
+    <label class="col-sm-2 col-form-label">Surname</label>
+    <div class="col-sm-10">
+        <input type="text"  [(ngModel)]="EmployersSurname"
+        placeholder="Enter Employers Surname">
+    </div>
+    <label class="col-sm-2 col-form-label">Year</label>
+    <div class="col-sm-10">
+        <input type="text"  [(ngModel)]="EmployersYearofBirth">
+    </div>
+    <label class="col-sm-2 col-form-label">Phone</label>
+    <div class="col-sm-10">
+        <input type="text"  [(ngModel)]="EmployersPhone">
+    </div>
+
+</div>
+</div>
+
+
+<button (click)="addEmployee()"  class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateEmployee()"  class="btn btn-primary">
+    Update
+</button>
